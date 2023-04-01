@@ -1,5 +1,6 @@
 {
   "name": "matx-react",
+  "homepage": ".",
   "version": "3.0.0",
   "private": true,
   "dependencies": {
@@ -46,7 +47,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "cross-env GENERATE_SOURCEMAP=false react-scripts build",
+    "build": "INLINE_RUNTIME_CHUNK=false cross-env GENERATE_SOURCEMAP=false react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "ghp": "react-scripts build && gh-pages -d build"
