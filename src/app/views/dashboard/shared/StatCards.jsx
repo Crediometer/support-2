@@ -38,19 +38,19 @@ const StatCards = (props) => {
   var incomplete = 0;
   // transactionType: 2
 
-  if (loaded)
-    credio.data.allUsers.map((e) => {
-      if (!e.pinCode || !e.bvn) {
-        incomplete++;
-      }
-      if (e.redFlag) {
-        frozen++;
-      }
+  // if (loaded)
+  //   credio.data.allUsers.map((e) => {
+  //     if (!e.pinCode || !e.bvn) {
+  //       incomplete++;
+  //     }
+  //     if (e.redFlag) {
+  //       frozen++;
+  //     }
 
-      if (!e.redFlag && e.bvn && e.pinCode) {
-        activated++;
-      }
-    });
+  //     if (!e.redFlag && e.bvn && e.pinCode) {
+  //       activated++;
+  //     }
+  //   });
   const cardList = [
     {
       name: 'New Users',
